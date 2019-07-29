@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name kov_schema-rescue)(type Legacy)(uri ${KIPRJMOD}/kov_schema-rescue.lib)(options "")(descr ""))
+)

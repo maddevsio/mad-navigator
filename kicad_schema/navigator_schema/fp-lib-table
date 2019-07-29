@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name kov_schema)(type KiCad)(uri /home/raistlin/work/kov/kicad_schema/kov_schema.pretty)(options "")(descr ""))
+  (lib (name mad_footprints)(type KiCad)(uri ${KIPRJMOD}/mad_footprints.pretty)(options "")(descr ""))
+)

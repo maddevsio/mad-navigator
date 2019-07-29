@@ -1,0 +1,414 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L mad_symbols:LIS3MDL L?
+U 1 1 5CE6A987
+P 1600 1600
+F 0 "L?" H 1600 2231 50  0000 C CNN
+F 1 "LIS3MDL" H 1600 2140 50  0000 C CNN
+F 2 "" H 850 2150 50  0001 C CNN
+F 3 "" H 850 2150 50  0001 C CNN
+	1    1600 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L mad_symbols:NEO-6M N?
+U 1 1 5CE6AE85
+P 10200 1450
+F 0 "N?" H 10200 2265 50  0000 C CNN
+F 1 "NEO-6M" H 10200 2174 50  0000 C CNN
+F 2 "" H 8610 2350 50  0001 C CNN
+F 3 "" H 8610 2350 50  0001 C CNN
+	1    10200 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F1:STM32F100RBTx U?
+U 1 1 5CE6BCCC
+P 1900 5500
+F 0 "U?" H 1900 3611 50  0000 C CNN
+F 1 "STM32F100RBTx" H 1900 3520 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1300 3800 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00251732.pdf" H 1900 5500 50  0001 C CNN
+	1    1900 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Motion:MPU-6050 U?
+U 1 1 5CE6F4BF
+P 5100 5900
+F 0 "U?" H 5100 5111 50  0000 C CNN
+F 1 "MPU-6050" H 5100 5020 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_4x4mm_P0.5mm" H 5100 5100 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf" H 5100 5750 50  0001 C CNN
+	1    5100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L mad_symbols:NOKIA5110 N?
+U 1 1 5CE73F5B
+P 9900 3350
+F 0 "N?" H 10378 3338 50  0000 L CNN
+F 1 "NOKIA5110" H 10378 3247 50  0000 L CNN
+F 2 "" H 10100 3400 50  0001 C CNN
+F 3 "" H 10100 3400 50  0001 C CNN
+	1    9900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5CE7780B
+P 8000 5600
+F 0 "#PWR?" H 8000 5450 50  0001 C CNN
+F 1 "+3.3V" H 8015 5773 50  0000 C CNN
+F 2 "" H 8000 5600 50  0001 C CNN
+F 3 "" H 8000 5600 50  0001 C CNN
+	1    8000 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CE82103
+P 8200 5600
+F 0 "#PWR?" H 8200 5350 50  0001 C CNN
+F 1 "GND" H 8205 5427 50  0000 C CNN
+F 2 "" H 8200 5600 50  0001 C CNN
+F 3 "" H 8200 5600 50  0001 C CNN
+	1    8200 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 9500 900  0    50   Input ~ 0
+GND
+Text GLabel 8200 5600 1    50   Input ~ 0
+GND
+Text GLabel 8000 5600 1    50   Input ~ 0
++3.3V
+Text GLabel 1700 3050 3    50   Input ~ 0
++3.3V
+Text GLabel 9500 1000 0    50   Input ~ 0
++3.3V
+Text GLabel 2450 1500 2    50   Input ~ 0
+I2C1SCL
+Text GLabel 4400 5700 0    50   Input ~ 0
+I2C1SCL
+Text GLabel 4400 5600 0    50   Input ~ 0
+I2C1SDA
+Text GLabel 1500 1150 1    50   Input ~ 0
+I2C1SDA
+Text GLabel 9500 1200 0    50   Output ~ 0
+USART3TX
+Text GLabel 9500 1300 0    50   Output ~ 0
+USART3RX
+Text GLabel 10250 3650 3    50   Input ~ 0
+GND
+Text GLabel 10050 3650 3    50   Input ~ 0
++3.3V
+Text GLabel 9550 3650 3    50   Input ~ 0
+SPI1RST
+Text GLabel 9650 3650 3    50   Input ~ 0
+SPI1CE
+Text GLabel 9850 3650 3    50   Input ~ 0
+SPI1MOSI
+Text GLabel 9950 3650 3    50   Input ~ 0
+SPI1SCK
+Text GLabel 9750 3650 3    50   Input ~ 0
+LCD1DC
+Text GLabel 10150 3650 3    50   Input ~ 0
+LCD1BACKLIGHT
+Text GLabel 5100 6600 3    50   Input ~ 0
+GND
+Text GLabel 5200 5200 1    50   Input ~ 0
++3.3V
+Text GLabel 1700 1000 1    50   Input ~ 0
+GND
+$Comp
+L Interface_USB:CP2102N-A01-GQFN28 U?
+U 1 1 5CEADF4A
+P 6250 3150
+F 0 "U?" H 6250 1761 50  0000 C CNN
+F 1 "CP2102N-A01-GQFN28" H 5700 1900 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 6700 1950 50  0001 L CNN
+F 3 "https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf" H 6300 2400 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CECBE23
+P 6000 1600
+F 0 "C?" V 5748 1600 50  0000 C CNN
+F 1 "0.1uF" V 5839 1600 50  0000 C CNN
+F 2 "" H 6038 1450 50  0001 C CNN
+F 3 "~" H 6000 1600 50  0001 C CNN
+	1    6000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CED1063
+P 5500 1600
+F 0 "C?" V 5248 1600 50  0000 C CNN
+F 1 "1uF" V 5339 1600 50  0000 C CNN
+F 2 "" H 5538 1450 50  0001 C CNN
+F 3 "~" H 5500 1600 50  0001 C CNN
+	1    5500 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1750 5750 1750
+Text GLabel 5750 1850 3    50   Input ~ 0
+GND
+Wire Wire Line
+	5750 1850 5750 1750
+Connection ~ 5750 1750
+Wire Wire Line
+	5750 1750 6000 1750
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 5CED7FA9
+P 4700 2650
+F 0 "J?" H 4757 3117 50  0000 C CNN
+F 1 "USB_B_Micro" H 4757 3026 50  0000 C CNN
+F 2 "" H 4850 2600 50  0001 C CNN
+F 3 "~" H 4850 2600 50  0001 C CNN
+	1    4700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1450 6000 1450
+Wire Wire Line
+	5200 2450 5750 2450
+Wire Wire Line
+	5200 1450 5200 2450
+Wire Wire Line
+	5750 2550 5300 2550
+Wire Wire Line
+	5000 2550 5000 2650
+Wire Wire Line
+	5750 2650 5400 2650
+Wire Wire Line
+	5100 2650 5100 2750
+Wire Wire Line
+	5100 2750 5000 2750
+Wire Wire Line
+	5000 2450 5200 2450
+Connection ~ 5200 2450
+Text GLabel 5300 3400 3    50   Input ~ 0
+GND
+Wire Wire Line
+	4700 3050 4700 3300
+Wire Wire Line
+	4700 3300 5000 3300
+Wire Wire Line
+	4600 3050 4600 3300
+Wire Wire Line
+	4600 3300 4700 3300
+Connection ~ 4700 3300
+Wire Wire Line
+	5000 2850 5000 3300
+Connection ~ 5000 3300
+Wire Wire Line
+	5200 2450 5200 2900
+Wire Wire Line
+	5300 2550 5300 2900
+Connection ~ 5300 2550
+Wire Wire Line
+	5300 2550 5000 2550
+Wire Wire Line
+	5400 2650 5400 2900
+Connection ~ 5400 2650
+Wire Wire Line
+	5400 2650 5100 2650
+$Comp
+L Device:C C?
+U 1 1 5CEFADA4
+P 6400 1450
+F 0 "C?" V 6148 1450 50  0000 C CNN
+F 1 "0.1uF" V 6239 1450 50  0000 C CNN
+F 2 "" H 6438 1300 50  0001 C CNN
+F 3 "~" H 6400 1450 50  0001 C CNN
+	1    6400 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5CEFB9DF
+P 6400 950
+F 0 "C?" V 6652 950 50  0000 C CNN
+F 1 "4.7uF" V 6561 950 50  0000 C CNN
+F 2 "" H 6400 950 50  0001 C CNN
+F 3 "~" H 6400 950 50  0001 C CNN
+	1    6400 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 950  6250 1450
+Wire Wire Line
+	6250 1450 6250 1850
+Connection ~ 6250 1450
+Wire Wire Line
+	6550 950  6550 1200
+Text GLabel 6650 1200 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6650 1200 6550 1200
+Connection ~ 6550 1200
+Wire Wire Line
+	6550 1200 6550 1450
+Text GLabel 6250 4650 3    50   Input ~ 0
+GND
+Wire Wire Line
+	6250 4450 6250 4650
+Wire Wire Line
+	6150 1450 6150 1850
+Connection ~ 5500 1450
+Wire Wire Line
+	5500 1450 5200 1450
+Connection ~ 6000 1450
+Wire Wire Line
+	6000 1450 5500 1450
+$Comp
+L Power_Protection:SP0503BAHT D?
+U 1 1 5CF18470
+P 5300 3100
+F 0 "D?" H 5505 3146 50  0000 L CNN
+F 1 "SP0503BAHT" H 5505 3055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 5525 3050 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 5425 3225 50  0001 C CNN
+	1    5300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3300 5300 3300
+Wire Wire Line
+	5300 3400 5300 3300
+Connection ~ 5300 3300
+Text GLabel 6750 2250 2    50   Input ~ 0
+USART1TX
+Text GLabel 6750 2350 2    50   Input ~ 0
+USART1RX
+$Comp
+L Device:R_Small R?
+U 1 1 5CF5F593
+P 5550 2250
+F 0 "R?" V 5354 2250 50  0000 C CNN
+F 1 "4.7kOhm" V 5445 2250 50  0000 C CNN
+F 2 "" H 5550 2250 50  0001 C CNN
+F 3 "~" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	0    1    1    0   
+$EndComp
+Text GLabel 5350 2150 1    50   Input ~ 0
++3.3V
+Wire Wire Line
+	5350 2150 5350 2250
+Wire Wire Line
+	5350 2250 5450 2250
+Wire Wire Line
+	5750 2250 5650 2250
+Text GLabel 7050 2950 2    50   Input ~ 0
+GND
+Wire Wire Line
+	7050 2950 7000 2950
+Wire Wire Line
+	6800 2950 6750 2950
+$Comp
+L Device:R_Small R?
+U 1 1 5CF6A0DB
+P 6900 2950
+F 0 "R?" V 6704 2950 50  0000 C CNN
+F 1 "4.7kOhm" V 6795 2950 50  0000 C CNN
+F 2 "" H 6900 2950 50  0001 C CNN
+F 3 "~" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	0    1    1    0   
+$EndComp
+Text GLabel 2400 3050 3    50   Input ~ 0
+GND
+$Comp
+L Device:C C?
+U 1 1 5CEAB5C5
+P 2250 1800
+F 0 "C?" V 2502 1800 50  0000 C CNN
+F 1 "100nF" V 2411 1800 50  0000 C CNN
+F 2 "" H 2288 1650 50  0001 C CNN
+F 3 "~" H 2250 1800 50  0001 C CNN
+	1    2250 1800
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1500 2050 3    50   Input ~ 0
++3.3V
+Wire Wire Line
+	1700 2050 1700 2250
+$Comp
+L Device:C C?
+U 1 1 5CFD4C7B
+P 2050 2250
+F 0 "C?" V 2302 2250 50  0000 C CNN
+F 1 "1uF" V 2211 2250 50  0000 C CNN
+F 2 "" H 2088 2100 50  0001 C CNN
+F 3 "~" H 2050 2250 50  0001 C CNN
+	1    2050 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 2250 2400 2250
+Connection ~ 2400 2250
+Wire Wire Line
+	2400 2250 2400 2700
+Wire Wire Line
+	1900 2250 1700 2250
+Connection ~ 1700 2250
+Wire Wire Line
+	1700 2250 1700 2700
+$Comp
+L Device:C C?
+U 1 1 5CFDE0EB
+P 2050 2700
+F 0 "C?" V 2302 2700 50  0000 C CNN
+F 1 "100nF" V 2211 2700 50  0000 C CNN
+F 2 "" H 2088 2550 50  0001 C CNN
+F 3 "~" H 2050 2700 50  0001 C CNN
+	1    2050 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 2700 1900 2700
+Connection ~ 1700 2700
+Wire Wire Line
+	1700 2700 1700 3050
+Wire Wire Line
+	2200 2700 2400 2700
+Connection ~ 2400 2700
+Wire Wire Line
+	2400 2700 2400 3050
+Wire Wire Line
+	2400 1600 2100 1600
+Wire Wire Line
+	2400 1600 2400 1700
+Connection ~ 2400 1800
+Wire Wire Line
+	2400 1800 2400 2250
+Wire Wire Line
+	2100 1700 2400 1700
+Connection ~ 2400 1700
+Wire Wire Line
+	2400 1700 2400 1800
+Wire Wire Line
+	2100 1500 2450 1500
+Wire Wire Line
+	1700 1000 1700 1150
+$EndSCHEMATC
