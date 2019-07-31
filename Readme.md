@@ -5,6 +5,8 @@
 Mad navigator is simple compass-like device shows direction to predefined geo point.
 This repository contains firmware source code and schematics for device. 
 
+[![Developed by Mad Devs](https://maddevs.io/badge-light.svg)](https://maddevs.io)
+
 ## Technologies and modules
 
 - Microcontroller [STM32F100RBT6](https://www.st.com/content/ccc/resource/technical/document/reference_manual/a2/2d/02/4b/78/57/41/a3/CD00246267.pdf/files/CD00246267.pdf/jcr:content/translations/en.CD00246267.pdf)
